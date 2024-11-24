@@ -11,33 +11,33 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Tariqul Islam All API");
+    res.send("Tariqul Islam All API");
 });
 
 app.get("/contact", (req, res) => {
-  res.send(contact);
+    res.send(contact);
 });
 
 app.get("/experience", (req, res) => {
-  res.send(experience);
+    res.send(experience);
 });
 
 app.get("/skill", (req, res) => {
-  res.send(skill);
+    res.send(skill);
 });
 
 app.get("/social", (req, res) => {
-  res.send(social);
+    res.send(social);
 });
 
 app.get("/works", (req, res) => {
-  res.send(works);
+    res.send(works);
 });
 
 app.get("*", (req, res) => {
-  res.send('API NOT FOUND');
+    res.send('API NOT FOUND');
 });
 
 app.listen(port, () => {
-  console.log("\x1b[1m\x1b[35m🌼 Tariqul\x1b[0m");
+    console.log("\x1b[1m\x1b[35m🌼 Tariqul\x1b[0m");
 });
